@@ -13,21 +13,6 @@ import javax.persistence.Id;
 public class Task implements Serializable {
 	public Task() {
 	}
-
-
-	public Task( String title, String labelTitle, Boolean completed,
-			String labelColor) {
-		super();
-		this.title = title;
-		this.labelTitle = labelTitle;
-		this.completed = completed;
-		this.labelColor = labelColor;
-	}
-
-
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 7185813866142443643L;
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
@@ -68,6 +53,15 @@ public class Task implements Serializable {
 		return labelColor;
 	}
 	public void setLabelColor(String labelColor) {
+		this.labelColor = labelColor;
+	}
+
+	public Task( String title, String labelTitle, Boolean completed,
+			String labelColor) {
+		super();
+		this.title = title;
+		this.labelTitle = labelTitle;
+		this.completed = completed;
 		this.labelColor = labelColor;
 	}
 

@@ -16,11 +16,14 @@ import br.com.llongo.persistence.repository.TaskRepository;
 @Controller
 @RequestMapping("/")
 public class Todo {
+		
 	private TaskRepository taskRepository;
+		
 	@Autowired
 	public Todo(TaskRepository taskRepository) {
 		this.taskRepository = taskRepository;
 	}
+		
 	@RequestMapping(method=RequestMethod.GET)
 	public String getTodo(ModelMap model) {
 		model.addAttribute("tasks",taskRepository.findAll());

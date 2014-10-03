@@ -40,6 +40,12 @@ public class Tasks {
     	Task one = taskRepository.findOne(id);
     	return one;
     }
+    
+    @RequestMapping(method = RequestMethod.GET, value = "/bytitle/{title}")
+    public List<Task> getTaskByTitle(@PathVariable String title) {
+    	List<Task> one = taskRepository.findByTitle(title);
+    	return one;
+    }
 	
 	@RequestMapping(value="/create",method = RequestMethod.POST,headers="Accept=application/json")
 	public ResponseEntity<Task> creatTask(@RequestBody Task task, UriComponentsBuilder builder){
