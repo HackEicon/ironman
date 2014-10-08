@@ -10,7 +10,6 @@
 		<provider>org.apache.openjpa.persistence.PersistenceProviderImpl</provider>
 
 		<!-- entidade mapeada -->
-		<class>br.com.llongo.persistence.entities.Task</class>
 
 		<properties>
 			<!-- dados da conexao -->
