@@ -19,7 +19,7 @@ public class Produto implements Serializable {
 	@Column
 	private String nome;
 	@Column
-	private String teste;
+	private String tested;
 	@Column
 	private String composicao;	
 	@Column
