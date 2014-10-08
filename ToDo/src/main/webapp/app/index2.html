@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+<meta charset="ISO-8859-1">
+    <meta charset="utf-8">
+    <title>Restaurant</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/bootswatch/lumen/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/google-code-prettify/bin/prettify.min.css" />
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+	<main class="container" ng-controller="TasksCtrl">
+
+      <div ng-include="'views/includes/header2.html'"></div>
+
+      <ng-view></ng-view>
+
+      <div ng-include="'views/includes/footer2.html'"></div>
+
+    </main>
+
+    <!-- dependencies -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/google-code-prettify/bin/prettify.min.js"></script>
+
+    <!-- app -->
+    <script src="scripts/services2.js"></script>
+    <script src="scripts/controllers2.js"></script>
+    <script src="scripts/directives2.js"></script>
+    <script src="scripts/app2.js"></script>
+
+</body>
+</html>
