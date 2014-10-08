@@ -19,6 +19,8 @@ public class Produto implements Serializable {
 	@Column
 	private String nome;
 	@Column
+	private String teste;
+	@Column
 	private String composicao;	
 	@Column
 	private int tipo;	
